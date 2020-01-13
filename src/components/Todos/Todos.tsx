@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 
 import './todos.scss';
@@ -11,10 +11,6 @@ const Todos = (props: any) => {
         props.todos.map((todo: TodoModel, index: number) =>
             <Todo {...todo} key={index} />
         ) : <></>
-
-    useEffect(() => {
-        console.log('todos', props)
-    }, [props])
 
     return (
         <div className="Todos">

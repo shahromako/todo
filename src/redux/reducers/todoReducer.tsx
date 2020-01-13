@@ -47,7 +47,7 @@ const removeTodo = (array: TodoModel[], id: number): TodoModel[] => {
 
 const updateTodo = (array: TodoModel[], id: number): TodoModel[] => {
     const todos = [...array];
-    todos.map((todo, index) => {
+    todos.map(todo => {
         if (todo.id === id) {
             todo.done = !todo.done;
         }

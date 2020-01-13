@@ -2,7 +2,7 @@
     border-radius: 10px;
     padding: 15px;
     margin: 15px 0;
-    box-shadow: 0 0 26px rgba(2, 3, 3, .16);
+    box-shadow: 0 0 26px rgba(61, 123, 123, 0.16);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -11,12 +11,13 @@
 
     .todo-action-buttons {
         min-width: 140px;
+        width: 140px;
         margin-right: 15px;
         padding-right: 15px;
         border-right: 1.5px solid #9c9c9c;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
 
         .btn {
             box-shadow: none !important;
@@ -27,6 +28,21 @@
             }
         }
     }
+
+    .todo-content {
+        width: 100%;
+
+        .form-control {
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: 2px solid #9c9c9c;
+
+            &:focus {
+                border-color: #17a2b8;
+            }
+        }
+    }
 }
 
 @media (max-width: 425px) {
@@ -34,6 +50,7 @@
         .todo-action-buttons {
             flex-direction: column;
             min-height: 140px;
+            height: 140px;
             min-width: 60px;
         }
     }

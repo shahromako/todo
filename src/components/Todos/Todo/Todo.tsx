@@ -21,8 +21,13 @@ const Todo = (props: TodoModel) => {
                 <button className="btn btn-sm btn-warning"><img src={edit} alt="edit" /></button>
                 <button className="btn btn-sm btn-danger" onClick={() => deleteTodo(id)}><img src={trash} alt="delete" /></button>
             </div>
-            <div>
+            <div className="todo-content">
                 <span style={{ textDecoration: done ? 'line-through' : 'none' }}>{todo}</span>
+                {/* <textarea
+                    className="form-control"
+                    value={todo}
+                    rows={1}>
+                </textarea> */}
             </div>
         </div>
     )

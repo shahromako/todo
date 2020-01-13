@@ -14,10 +14,12 @@ export interface InitialState {
 }
 
 export interface StoreState {
-    todoReducer: TodoReducer,
+    todoReducer: TodoReducer
+
 }
 
 export interface TodoReducer {
     todoList: TodoModel[]
 }
+
 
